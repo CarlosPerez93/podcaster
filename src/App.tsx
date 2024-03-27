@@ -1,10 +1,13 @@
+import { RouterProvider } from "react-router-dom";
+
+import { router } from "./routes/Router";
+
 import styles from "./App.module.css";
-import { CustomHeader } from "./components/CustomHeader/CustomHeader";
 
 function App() {
   return (
     <div className={styles.app}>
-      <CustomHeader />
+      <RouterProvider router={router} />
     </div>
   );
 }
