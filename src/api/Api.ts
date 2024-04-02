@@ -5,6 +5,5 @@ const url =
 
 export const podcastApi = async () => {
   const response = await axios.get(url);
-
   return response;
 };

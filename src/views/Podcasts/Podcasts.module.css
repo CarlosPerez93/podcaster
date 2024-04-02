@@ -1,0 +1,12 @@
+.podcasts {
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  padding: 2px;
+  font-size: 12px;
+}
+.album {
+  margin: 0 auto;
+  width: 100px !important;
+  border-radius: 50% !important;
+}

@@ -5,7 +5,9 @@ export const useGetPodcast = () => {
   const query = useQuery({
     queryKey: ["podcast"],
     queryFn: podcastApi,
+    staleTime: 1000 * 60 * 60 * 12,
   });
 
-  return query;
+  let data = query.data?.data?.feed.entry;
+  return { data, query };
 };
