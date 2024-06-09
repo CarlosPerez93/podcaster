@@ -14,11 +14,11 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/podcast/:podcastId",
+        path: "/podcast/:id",
         element: <PodcastById />,
       },
       {
-        path: "podcast/:podcastId/episode/:episodeId",
+        path: "/podcast/:id/episode/:episodeId",
         element: <PodcastByEpisode />,
       },
     ],

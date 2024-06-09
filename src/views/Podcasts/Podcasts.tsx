@@ -4,9 +4,10 @@ import { FC } from "react";
 import { PodcastsProps } from "./podccasts.type";
 
 import styles from "./Podcasts.module.css";
-export const Podcasts: FC<PodcastsProps> = ({ data, img, author }) => {
+export const Podcasts: FC<PodcastsProps> = ({ data, img, author, onclick }) => {
   return (
     <Card
+      onClick={onclick}
       hoverable
       className={styles.podcasts}
       cover={<img className={styles.album} alt="photo podcast" src={img[0]} />}

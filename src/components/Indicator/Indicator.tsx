@@ -6,7 +6,7 @@ export const Indicator: FC<IndicatorProps> = ({ state }) => {
   return (
     <div
       className={styles.indicatorPlay}
-      style={state ? { display: "block" } : { display: "none" }}
+      style={state ? { display: "none" } : { display: "block" }}
     />
   );
 };

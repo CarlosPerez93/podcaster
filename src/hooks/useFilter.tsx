@@ -1,8 +1,6 @@
 import { USEFILTER } from "./useFilter.type";
 
 export const useFilter = ({ data, stateFilter, key }: USEFILTER) => {
-  console.log(data, stateFilter);
-
   if (key === "title") {
     return data?.filter((item: any) => {
       return stateFilter.toString().toLowerCase() == ""
